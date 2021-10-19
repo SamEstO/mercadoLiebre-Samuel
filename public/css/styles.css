@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eac926;
+    color: #03264C;
+    padding-bottom: 10px;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    padding: 20px;
+}
+
+.search-bar {
+    width: 50%;
+    position: relative;
+}
+
+input.search {
+    border: none;
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+button.b-search-bar {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 5%;
+    top: 8px;
+    cursor: pointer;
+}
+
+nav{
+    padding-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    display: none;
+    font-size: 0.8rem;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #666;
+    margin: 10px;
+}
+
+.nav-left {
+    align-items: flex-start;
+}
+
+.nav-right {
+    align-items: flex-end;
+}
+
+.burger-menu {
+    text-align: center;
+    margin: 10px 5px 0px;
+    color: white;
+    border-radius: 20%;
+}
+
+.fa-bars{
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+main {
+    background-color: #ebebeb;
+    /* color: #666; */
+}
+
+.banner {
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+
+
+ article img {
+     width: 100%;
+     /* border-radius: 3%; */
+ }
+
+ article div {
+     border-top: 1px solid #ebebeb;
+     padding: 15px;
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+ }
+
+  .fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+ }
+
+ 
+ footer article, span {
+     text-align: center;
+     margin: 30px 0 15px 0;
+     color: #666;
+     padding: 0px 20px;
+ }
+
+ footer article i.fas {
+     font-size: 2em;
+     margin-bottom: 10px;
+     color: #1259c3;
+ }
+
+.title{
+    font-size: 24px;
+    color: #666;
+    padding: 15px;
+    width: 100%;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+}
+
+.description {
+    display: none;
+    color: #666;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.center-text {
+    text-align: center;
+    width: 100%;
+}
+
+/* Tablets */
+@media (min-width: 426px) {
+    .navbar{
+        width: 60%;
+    }
+
+    .center-text{
+        width: 30%;
+    }
+
+    .description {
+        display: block;
+    }
+
+    .product {
+        width: 45%;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .product {
+        width: 22.5%;
+        transition: box-shadow 500ms;
+    }
+
+    .product:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .fa-truck {
+        transition: transform 500ms;
+    }
+
+    .description {
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+
+    article.product:hover .description{
+        opacity: 1;
+    }
+    
+
+    article.product:hover .fa-truck {
+        transform: rotate(-90deg);
+    }
+
+    .top-header {
+        font-size: 1rem;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    footer { 
+        text-align: center;
+    }
+
+    
+    footer div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer article {
+        width: 30%;
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ebebeb;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #666;
+    width: 100%;
+    text-align: center;
+}
+
+.formular {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+
+.formular div {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.formular div label {
+    width: 100%;
+    display: block;
+}
+
+.full-name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+} 
+
+.formular div.name,.formular div.last-name {
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+input, .botones, .boton {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div input {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+}
+
+div input#profile-picture {
+    background-color: #ebebeb;
+}
+
+label input[type='checkbox'], label input[type='radio']{
+    width: fit-content;
+    margin: 10px;
+}
+
+.interest, .profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.interest label, div.profile label {
+    width: fit-content;
+}
+
+div.password label {
+    margin-bottom: 10px;
+}
+
+
+.sub-res-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.botones {
+ width: 45%;
+ display: inline-block;
+ background-color: #1259c3;
+ border: none;
+ color: #fff;
+}
+
+.boton {
+    width: 45%;
+    margin: auto;
+    background-color: #1259c3;
+    border: none;
+    color: #fff;
+}
+
+.boton:hover {
+    background-color: #0022AA;
+}
