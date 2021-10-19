@@ -167,6 +167,12 @@ main section {
     width: 100%;
 }
 
+.ow {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
 .price {
     font-size: 18px;
     width: 30%;
